@@ -1,0 +1,69 @@
+@font-face {
+   font-family: '1924-font'; /* Названием шрифта может быть любое уникальное имя, только старайтесь избежать Comic Sans */
+   src: url('1924-font.woff') format('woff2'), /* Наиболее предпочтительный формат */
+        url('1924-font.woff') format('woff'); /* Запасной вариант для браузеров, не поддерживающих woff2 */
+}
+
+.animated-text{
+   border-right: 5px solid black;
+   padding-right: 20px;
+   font-weight: bold;
+   animation: typing 3s, blinking 0.75s step-end infinite;
+}
+
+@keyframes blinking{
+   from, to{
+      border-color: transparent;
+   }
+   50%{
+      border-color: black;
+   }
+}
+
+@keyframes typing{
+   from{
+      width: 0;
+   }
+   to{
+      width: 100%;
+   }
+}
+
+span{
+   font-size: 80px;
+}
+
+div{
+   text-align: center;
+   width: 100%;
+   height: 100vh;
+}
+
+.path_line {
+   animation-timing-function: linear;
+   animation-fill-mode: forwards;
+   animation-name: line;
+}
+
+body {
+   background: #f1c40f;
+   /* background: red; */
+   height: 100%;
+   width: 100%;
+   font-family: '1924-font';
+   font-size: 80px;
+   margin-top: 150px;
+   color: white;
+}
+/* svg {
+   position: relative;
+   top: 100%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+} */
+
+@keyframes line {
+   100% {
+       stroke-dashoffset: 0;
+   }
+}

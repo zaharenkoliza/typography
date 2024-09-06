@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css"></linkrel>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SVG Animation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mina:wght@400;700&family=Neucha&family=Poiret+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div>
+   <!-- <img src="капча.png" alt="#"> -->
+      <!-- создаём подпись и указываем, к какому элементу она относится -->
+        <label for="myCheckbox01" class="checkbox">
+      
+          <!-- размещаем обычный чекбокс и задаём ему нужный класс -->
+          <!-- также указываем id, чтобы подпись смогла найти этот инбокс -->
+          <input class="checkbox__input" type="checkbox" id="myCheckbox01">
+          
+          <!-- готовим виртуальное пространство для рисования -->
+          <svg class="checkbox__icon" viewBox="0 0 22 22">
+            <!-- рисуем красивую рамку чекбокса -->
+            <rect width="21" height="21" x=".5" y=".5" fill="#FFF" stroke="#C5C5C5" rx="3" />
+            <!-- сразу делаем красивую галочку, но пока делаем её невидимой -->
+            <path class="tick" stroke="#5D9E52" fill="none" stroke-linecap="round" stroke-width="4" d="M4 10l5 5 9-9" />
+          </svg>
+      
+          <!-- подписываем наш чекбокс -->
+          <span class="checkbox__label">I am human</span>
+        </label>
+        <button><a href="second.html">далее</a></button>
+
+      </div>
+
+       
+</body>

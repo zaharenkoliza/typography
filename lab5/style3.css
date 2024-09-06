@@ -1,0 +1,117 @@
+@font-face {
+   font-family: '1924-font'; /* Названием шрифта может быть любое уникальное имя, только старайтесь избежать Comic Sans */
+   src: url('1924-font.woff') format('woff2'), /* Наиболее предпочтительный формат */
+        url('1924-font.woff') format('woff'); /* Запасной вариант для браузеров, не поддерживающих woff2 */
+}
+
+body {
+   font-family: '1924-font';
+   margin: 0;
+   background-color: #f1c40f;
+   height: 7000px;
+}
+
+.container {
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 50px;
+}
+
+
+.animated-text{
+   border-right: 5px solid black;
+   padding-right: 20px;
+   font-weight: bold;
+   animation: typing 3s, blinking 0.75s step-end infinite;
+}
+
+@keyframes blinking{
+   from, to{
+      border-color: transparent;
+   }
+   50%{
+      border-color: black;
+   }
+}
+
+@keyframes typing{
+   from{
+      width: 0;
+   }
+   to{
+      width: 100%;
+   }
+}
+
+span{
+   font-size: 80px;
+}
+
+/* div{
+   text-align: center;
+   width: 100%;
+   height: 90vh;
+} */
+
+.path_line {
+   animation-timing-function: linear;
+   animation-fill-mode: forwards;
+   animation-name: line;
+}
+
+body {
+   /* background: url('b79af5850ce890e052487cc88ab91251.gif'); */
+   /* background: red; */
+   width: 100%;
+   font-size: 80px;
+   /* margin-top: 150px; */
+}
+/* svg {
+   position: relative;
+   top: 100%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+} */
+
+@keyframes line {
+   100% {
+       stroke-dashoffset: 0;
+   }
+}
+
+#title{
+   padding-top: 20vh;
+   height: 100vh;
+}
+
+body{
+   --scroll: 0;
+   overflow-x:hidden;
+}
+#testy{
+   height: 100px;
+ }
+
+.fixed {
+   position: fixed;
+   top: 40px; /* Расстояние от верхней части экрана */
+}
+
+.svg_cont{
+   display: flex;
+   justify-content: center;
+}
+
+#myDiv{
+   margin: auto;
+}
+
+.divader{
+   height: 500px;
+}
+
+p{
+   text-align: center;
+   font-size: 60px;
+   padding-top: 50px;
+}
